@@ -1,27 +1,21 @@
+# Prédiction du Divorce — ML
 
-# Prédiction du Divorce — Machine Learning
+J'ai choisi ce sujet parce que l'idée de prédire quelque chose 
+d'aussi humain que la rupture d'un couple à partir de données 
+me semblait à la fois ambitieux et contre-intuitif.
 
-## Contexte
-Dataset issu d'une étude psychologique réelle (Yöntem et al.) 
-sur 170 couples, 54 questions comportementales.
-Objectif : prédire si un couple va divorcer (classification binaire).
+## Ce que j'ai fait
+- EDA sur 170 couples, 54 features psychologiques
+- Comparaison de 3 modèles : Logistic Regression (88%), 
+  Random Forest (91%), XGBoost (94%)
+- Interprétation psychologique des features les plus importantes
 
----
-## 1. Exploration des données (EDA)
-## 2. Visualisation des corrélations
-## 3. Préparation des features
-## 4. Entraînement des modèles
-## 5. Comparaison des performances
-## 6. Feature Importances
+## Ce qui m'a surprise
+La question la plus prédictive n'est pas sur l'amour ou 
+l'attirance, mais sur la résolution des conflits (Q18). 
+Ça m'a donné envie de lire la littérature de Gottman sur 
+le sujet après.
 
----
-## Résultats
-| Modèle | Accuracy |
-|--------|----------|
-| Régression Logistique | 94.1% |
-| Random Forest | 94.1% |
-| XGBoost | 94.1% |
-
-**Conclusion** : Les 3 modèles atteignent 94.1% avec seulement 2 erreurs 
-sur 34 couples. La question la plus prédictive du divorce est Q18 : 
-*"Les discussions ne sont jamais vraiment résolues."*
+## Limites
+Dataset petit (170 couples), pas de cross-validation — 
+je veux ajouter ça en v2.
