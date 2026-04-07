@@ -4,6 +4,12 @@ J'ai choisi ce sujet parce que l'idée de prédire quelque chose
 d'aussi humain que la rupture d'un couple à partir de données 
 me semblait à la fois ambitieux et contre-intuitif.
 
+
+## Dataset
+Dataset issu de l'étude Yöntem et al. (2019), disponible sur Kaggle :
+https://www.kaggle.com/datasets/andrewmvd/divorce-prediction
+
+
 ## Ce que j'ai fait
 - EDA sur 170 couples, 54 features psychologiques
 - Comparaison de 3 modèles : Logistic Regression (88%), 
